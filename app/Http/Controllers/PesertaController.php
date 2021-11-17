@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Register;
 use Illuminate\Http\Request;
 
-class DaftarController extends Controller
+class PesertaController extends Controller
 {
-   
     public function index()
     {
-        return view('daftar.index');
+        return view('verifikasi.peserta.index');
     }
 }

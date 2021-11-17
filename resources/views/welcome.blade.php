@@ -49,7 +49,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 75px;
             }
 
             .links > a {
@@ -84,12 +84,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md" style= "font-weight:bold; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ">
-                    KEGIATAN  KU
-                </div>
-
-                <h1 class="mb-5"> SELAMAT DATANG DI APLIKASI KEGIATAN KU</h1>
-                <a class="lead " href="{{route('cek_kegiatan.index')}}" style="text-decoration: none; color:#636b6f">Cek Kegiatan</a>
+                @yield('content')
             </div>
         </div>
     </body>
