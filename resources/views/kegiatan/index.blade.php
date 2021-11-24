@@ -39,10 +39,8 @@
                                         <th>Nama Kegiatan</th>
                                         <th>IDR</th>
                                         <th>Status</th>
-                                        <th>Keterangan</th>
-                                        <th>Peserta</th>
-                                        <th>tgl_mulai</th>
-                                        <th>tgl_selesai</th>
+                                        
+                                        
                                         <th>Option</th>
                                     </tr>
                                 </thead>
@@ -53,10 +51,7 @@
                                             <td>{{$it->nama_activity}}</td>
                                             <td>{{$it->idr}}</td>
                                             <td>{{$it->status}}</td>
-                                            <td>{{$it->desc}}</td>
-                                            <td>{{$it->jumlah_peserta}}</td>
-                                            <td>{{$it->tgl_awal}}</td>
-                                            <td>{{$it->tgl_selesai}}</td>
+                                            
                                         
                                         <td>
                                             <form action="{{route('manage-kegiatan.delete', $it->id) }}" method="post">

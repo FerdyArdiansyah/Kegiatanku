@@ -55,6 +55,7 @@ Route::group(['prefix' => 'verifikasi-pendaftaran'], function(){
     Route::get('/ulang','DaftarUlangController@index')->name('verifikasi-pendaftaran.ulang');
     Route::get('/peserta','PesertaController@index')->name('verifikasi-pendaftaran.peserta');
     Route::get('/edit-peserta', 'VerifikasiController@edit')->name('verifikasi-pendaftaran.edit');
+    Route::patch('/accept/{register}','PesertaController@store')->name('verifikasi-pendaftaran.accept');
 });
 
 Route::group(['prefix' => 'user'], function(){

@@ -45,17 +45,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($registers as $register)
                                     <tr>
-                                        <td>1414</td>
-                                        <td>214124</td>
-                                        <td>Anggie</td>
-                                        <td>09-14-2012</td>
-                                        <td>Aktif</td>
+                                        <td>{{$register->activity->kode_activity}}</td>
+                                        <td>belum</td>
+                                        <td>{{$register->user->name}}</td>
+                                        <td>{{$register->created_at}}</td>
+                                        
                                         <td>
-                                            <a href="" class="btn btn-secondary btn-sm">Edit</a>
-                                            <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
+                                            <span class="badge badge-info">
+                                                {{$register->status}}</td>
+                                            </span>       
+                                        <td>
+                                            <button type="submit" class=" btn btn-info btn-sm">Cetak Sertifikat</button>
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
