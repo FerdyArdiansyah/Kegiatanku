@@ -39,7 +39,7 @@ Route::group(['prefix' => 'tambah-data'], function() {
 });
 
 Route::group(['prefix' => 'edit-data'], function() {
-    route::get('siswa', 'DataSiswaController@edit')->name('edit-data.siswa');
+    route::get('siswa/{user}', 'DataSiswaController@edit')->name('edit-data.siswa');
 });
 
 Route::group(['prefix'  => 'manage-kegiatan'], function(){

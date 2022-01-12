@@ -53,7 +53,7 @@
                                         <td>{{$student->users->first()->students->first()->major ?? 'belum Tersedia'}}</td>
                                         <td>{{$student->users->first()->students->first()->status ?? 'belum Tersedia'}}</td>
                                         <td>
-                                            <a href="{{route('edit-data.siswa')}}" class="btn btn-secondary btn-sm">Edit</a>
+                                            <a href="{{route('edit-data.siswa', $student->id)}}" class="btn btn-secondary btn-sm">Edit</a>
                                             <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
                                         </td>
                                     </tr>
