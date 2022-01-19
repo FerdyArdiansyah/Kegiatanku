@@ -79,3 +79,8 @@ Route::group(['prefix' => 'destroy'], function(){
     route::delete('data/activity/{activity}','ManagekegiatanController@destroy')->name('destroy.data.activity');
     
 });
+
+Route::Group(['prefix' => 'cetak'], function(){
+    route::get('activity', 'Report\ActivityController@index')->name('cetak.activity');
+    route::get('data.activity', 'Report\ActivityController@edit')->name('all.activity');
+});
