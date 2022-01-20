@@ -10,7 +10,7 @@
 <body class="bg-white">
     <div class="content px-3">
         <div class="mb-3">
-            <h3 class="text-info">Laporan Periode Acticity</h3>
+            <h3 class="text-info">Laporan Acticity</h3>
             <h5 class="text-muted">Smk Al-Bahri</h5>
             <h5 class="text-muted">JL. Yon Armed No.07</h5>
         </div>

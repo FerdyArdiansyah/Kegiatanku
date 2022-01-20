@@ -18,7 +18,6 @@ class KegiatanController extends Controller
     {
         $activitys = Activity::paginate(8);
 
-
         return view('kegiatan.show', compact('activitys'));
     }
 
