@@ -10942,6 +10942,11 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #f7f8fd;
+  opacity: 1;
+}
+
 .navbar-laravel {
   background-image: linear-gradient(to right, #8E0E00, #1F1C18);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

@@ -1,20 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page"> Data Kegiatan</li> 
-               </ol>
-             </nav>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <a href="{{route('manage-kegiatan.add-form')}}" class="btn btn-success">Tambah Kegiatan</a>
-                            <a href="{{route('all.activity')}}" class="btn btn-success">Cetak Semua</a>
-                        </div>
+
+<div class="container">
+    <div class="row mb-3" style="margin-top: -70px">
+        <div class="col-md-12">
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <a href="{{route('manage-kegiatan.add-form')}}" class="btn btn-info">Tambah Kegiatan</a>
+                        <a href="{{route('manage-kegiatan.add-form')}}" class="btn btn-success">Cetak semua data</a>
+                    </div>
                         <form action="{{route('cetak.activity')}}" method="get">
                             <div class="row">
                                 <div class="col-md-3">
