@@ -37,13 +37,11 @@
                                     </p>
                                     <small>
                                         {{$activity->status}}, {{$activity->created_at->diffForHumans()}}
-                                    </button>
+                                    </small>
                                 </div>
                             </div>
                             <div>
-                                <a href="{{route('kegiatan.create', $activity->id)}}" class="btn btn-outline-info">
-                                    read more
-                                </a>
+                                <a href="{{route('kegiatan.create', $activity->id)}}" class="btn btn-outline-info">read more</a>
                             </div>
                         </div>
                     </div>
@@ -54,3 +52,4 @@
 </div>
 
 @endsection
+
