@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Register;
 use App\Activity;
+use App\Student;
 use Illuminate\Http\Request;
 use App\Mail\PendaftaranMail;
-use Illuminate\Support\Facades\Mail;
+use Nexmo\Laravel\Facade\Nexmo;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Auth;
 
@@ -38,6 +39,20 @@ class KegiatanController extends Controller
             'qty' => $request->qty,
         ]);
 
+        // if ($user->save()) {
+        //     $user = User::findOrFail(Auth::user()->id);
+        
+        //     Nexmo::message()->send([
+        //         'to' =>   '62' . $user->phone,
+        //         'from' => 'Kegiatanku',
+        //         'text'  => 'Halo Kami dari kegiatanku Ingin Memberi tahu Atas pembelian tiket yang berhasil'
+                
+        //         . 'Kode pendaftaran' : ' .$register->activity->kode_activity,
+        //         . 'Jumlah Tiket' : ' .$register->qty,
+        //         . 'Total Pembayaran' : ' .$register->qty * $register->activity->idr
+                
+        //         ]);
+        // }
         $to = Mail::to($user->email)->send(new PendaftaranMail($register));
 
         return redirect()->back();

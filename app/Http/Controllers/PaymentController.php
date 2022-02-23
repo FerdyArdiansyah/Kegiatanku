@@ -29,11 +29,11 @@ class PaymentController extends Controller
             $activity = Activity::findOrFail($get->activity_id);
 
             $hitung = $activity->jumlah_peserta - $get->qty;
-            $get->update ([
-                'status'  => 'terverifikasi'
-            ]);
             $activity->update ([
                 'jumlah_peserta'  => $hitung
+            ]);
+            $get->update ([
+                'status'  => 'terverifikasi'
             ]);
         }
 

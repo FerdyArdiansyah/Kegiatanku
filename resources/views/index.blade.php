@@ -24,7 +24,7 @@
     </div>
     <div class="row pt-4">
         @foreach ($activitys as $activity)
-            <div class="col-md-12">
+            <div class="col-md-12 mb-4">
                 <div class="card border-0">
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
@@ -52,4 +52,5 @@
 </div>
 
 @endsection
+
 

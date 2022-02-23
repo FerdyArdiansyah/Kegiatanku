@@ -83,3 +83,14 @@ Route::Group(['prefix' => 'cetak'], function(){
     route::get('activity', 'Report\ActivityController@index')->name('cetak.activity');
     route::get('data.activity', 'Report\ActivityController@edit')->name('all.activity');
 });
+
+route::group(['prefix' => 'sms'], function(){
+    route::get('create','SmsController@create')->name('sms.create');
+    route::post('sms/{sms}','SmsController@store')->name('sms.kirim');
+});
+
+Route::group(['prefix' => 'activity'], function(){
+    route::get('/', 'KegiatankuController@index')->name('activity');
+});
+
+route::get('cetak/sertifikat/{register}', 'Pendaftaran\VerifiedController@sertifikat')->name('cetak.sertifikat');

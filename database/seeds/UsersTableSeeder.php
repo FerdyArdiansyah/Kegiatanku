@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
         $admin = factory(User::class)->create([
             'name'     => 'Ferdy',
             'email'    => 'fer@albahri.com',
+            'phone'    => '89611439048',
             'email_verified_at' => now(),
             'password' => bcrypt('albahri'),
         ]);
@@ -32,6 +33,7 @@ class UsersTableSeeder extends Seeder
         $bendahara = factory(User::class)->create([
             'name'     => 'Ferdy Otwel',
             'email'    => 'fer1@albahri.com',
+            'phone'    => '89611439048',
             'email_verified_at' => now(),
             'password' => bcrypt('albahri'),
         ]);
@@ -46,6 +48,7 @@ class UsersTableSeeder extends Seeder
         $student = factory(User::class)->create([
             'name'     => 'Ferdy Wathan',
             'email'    => 'fer2@albahri.com',
+            'phone'    => '89611439048',
             'email_verified_at' => now(),
             'password' => bcrypt('albahri'),
         ]);

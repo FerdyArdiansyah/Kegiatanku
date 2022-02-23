@@ -42,7 +42,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Nama</label>
-                                    <input type="text" class="form-control" value="{{ Auth::user()->name }}">
+                                    <input type="text" class="form-control" value="{{Auth::user()->name}}">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -65,6 +65,7 @@
                                 </div>
                             </div>
                             <input type="hidden" name="status" class="form-control" value="pending">
+                            
                             <div class="ml-3">
                                 <button type="submit" class="btn btn-info"> Beli Tiket</button>
                             </div>
